@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { auth } from "@/firebase";
 import { signInWithPopup } from "firebase/auth";
-import { GoogleAuthProvider } from "firebase/auth/web-extension";
+import { GoogleAuthProvider } from "firebase/auth";
 
 export default function SignIn() {
     const signIn = async () => {

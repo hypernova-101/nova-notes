@@ -1,5 +1,4 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
-import { Button } from "./components/ui/button"
 import AuthProvider from "./providers/auth-provider"
 import { ThemeProvider } from "./providers/theme-provider"
 import HomePage from "./routes/home-route"
@@ -7,6 +6,7 @@ import SettingsPage from "./routes/settings-route"
 import Layout from "./layouts/layout"
 import SignedIn from "./components/custom/signed-in"
 import SignedOut from "./components/custom/signed-out"
+import SignIn from "./routes/sign-in-route"
 
 function App() {
 
@@ -23,9 +23,7 @@ function App() {
       </SignedIn>
       <SignedOut>
         <Routes>
-          <Route path="/">
-            
-          </Route>
+          <Route path="/" element={<SignIn/>}/>
         </Routes>
       </SignedOut>
     </BrowserRouter>
