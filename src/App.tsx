@@ -7,6 +7,7 @@ import Layout from "./layouts/layout"
 import SignedIn from "./components/custom/signed-in"
 import SignedOut from "./components/custom/signed-out"
 import SignIn from "./routes/sign-in-route"
+import { Toaster } from "./components/ui/sonner"
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
       </SignedOut>
     </BrowserRouter>
     </ThemeProvider>
+    <Toaster/>
     </AuthProvider>
   )
 }
